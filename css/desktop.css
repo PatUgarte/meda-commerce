@@ -1,0 +1,113 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.page-header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 2rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1.5%;
+}
+
+.page-header__logo-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.page-header__logo-container--img {
+    height: 75px;
+    width: unset;
+}
+
+.page-header__logo-container--name {
+    font-size: 3rem;
+}
+
+.page-header__navbar {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.page-header__navbar--item-list {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.page-header__navbar--item {
+    margin-right: 20px;
+}
+
+.page-header__navbar--item:not(:last-child)::after {
+    content: none;
+}
+
+.main-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.aside-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: unset;
+    padding: 1%;
+    width: 20%;
+}
+
+.aside-container__element {
+    height: 250px;
+    margin: 4% 0;
+    width: 100%;
+}
+
+.info-section {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    width: 80%;
+}
+
+.all-card-container {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.card-container {
+    padding: 0 20px;
+}
+
+.card-body {
+    max-width: 450px;
+    min-width: unset;
+}
+
+.footer-container>p {
+    font-size: 2rem;
+}
+
+.footer-container>.signature {
+    font-size: 3rem;
+}
+
+.footer-container>a>img {
+    width: 75%;
+}
