@@ -1,13 +1,27 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .page-header__logo-container--img {
     width: 75%;
 }
 
 .page-header__navbar--item-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .page-header__navbar--item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -18,10 +32,14 @@
 
 .page-header__navbar--anchor {
     background-color: unset;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
 .aside-container {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 }
 
@@ -34,9 +52,18 @@
 }
 
 .footer-container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -49,6 +76,8 @@
 }
 
 .footer-container>a {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     width: 12%;
 }
