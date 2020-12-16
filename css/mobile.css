@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 @font-face {
     font-family: 'medabots-regular';
     font-style: normal;
@@ -13,7 +6,6 @@
 }
 
 * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -25,42 +17,22 @@ html {
 }
 
 .page-header {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-color: darkblue;
     color: whitesmoke;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 3rem;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
 }
 
 .page-header__logo-container {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -78,15 +50,8 @@ html {
 }
 
 .page-header__navbar--item-list {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     list-style: none;
     margin: 20px 0;
@@ -109,50 +74,32 @@ html {
 }
 
 .page-header__navbar--anchor:hover {
-    color: orange;
+    color: yellow;
     font-weight: 600;
+    text-shadow: 2px 2px 10px orange, -2px -2px 10px orange;
 }
 
 .main-container {
     background-color: orange;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
 }
 
 .aside-container {
     background-color: orangered;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     padding: 3%;
     width: 100%;
 }
 
-.aside-container__element {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+.aside-container__blury-card {
     align-items: center;
     background-color: rgba(46, 46, 46);
     border-radius: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 150px;
     margin: 1%;
@@ -160,12 +107,17 @@ html {
     width: 48%;
 }
 
-.aside-container__element:hover {
+.aside-container__blury-card:hover {
     border: 3.5px solid yellow;
     cursor: pointer;
+    box-shadow: 1px 1px 5px 5px orange, -1px -1px 5px 5px orange;
 }
 
-.aside-container__element--text {
+.aside-container__blury-card:hover>.aside-container__blury-card--text {
+    text-shadow: 1px 1px 4px orange, -1px -1px 4px orange;
+}
+
+.aside-container__blury-card--text {
     color: yellow;
     font-family: 'medabots-regular';
     font-size: 2.5rem;
@@ -174,7 +126,7 @@ html {
     z-index: 1;
 }
 
-.aside-container__element--img {
+.aside-container__blury-card--img {
     border-radius: 15px;
     height: 100%;
     width: 100%;
@@ -182,7 +134,7 @@ html {
     position: absolute;
 }
 
-.info-section {
+.info-article {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -191,167 +143,138 @@ html {
     text-align: justify;
 }
 
-.info-section__article>h1 {
+.info-article__section>h1 {
     font-size: 3rem;
     margin: 3% 0;
 }
 
-.info-section__article>h2 {
+.info-article__section>h2 {
     font-size: 2rem;
     margin: 2% 0;
 }
 
-.info-section__article>p {
+.info-article__section>p {
     margin: 1% 0;
 }
 
-.all-card-container {
+.medacards-container {
     background-color: red;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    padding: 2% 0;
+    padding: 2% 0 50px;
     width: 100%;
 }
 
-.card-container {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+.medacard {
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.card-container>* {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    background-color: #7e7e7e;
+    border: 4px double orange;
     border-radius: 35px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    box-shadow: 12px 12px 6px 4px firebrick;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 600px;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+}
+
+.medacard>* {
+    align-items: center;
     display: flex;
 }
 
-.card-header {
+.medacard-header {
     background-color: orange;
-    border: 4px solid darkslategray;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
+    border: 4px outset darkslategray;
+    border-radius: 35px;
     flex-direction: row;
     font-family: 'medabots-regular';
     font-size: 2.5rem;
     font-weight: 900;
     height: 60px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
     min-width: fit-content;
     padding: 5px;
     position: relative;
     text-align: center;
+    text-shadow: 2px 2px 2px darkslategray;
     text-transform: uppercase;
-    top: 15px;
+    top: -27px;
     z-index: 1;
 }
 
-.card-header__medal-logo {
+.medacard-header__medal-logo {
     height: 80%;
     margin: 0 5px;
 }
 
-.card-body {
-    background-color: #7e7e7e;
-    border: 4px solid orange;
+.medacard-body {
     bottom: 2.5vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     font-size: 1rem;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     min-width: 300px;
-    padding: 4vh 2vw 0;
-    position: relative;
+    padding: 0 2vw;
     width: 30vw;
 }
 
-.card-body__image {
+.medacard-body__image {
     border: 2px solid darkslategray;
     border-radius: 20px;
-    height: 300px;
-    margin: 2% 0;
-    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    top: -15px;
+    width: 325px;
 }
 
-.card-body__section {
+.medacard-body__description {
     background-color: #acacac;
-    border: 4px solid darkslategray;
+    border: 4px double darkslategray;
     border-radius: 20px;
     padding: 5px 10px;
+    width: 325px;
 }
 
-.card-body__section--title {
+.medacard-body__description--title {
     font-family: 'medabots-regular', sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 1%;
 }
 
-.card-body__section--content {
+.medacard-body__description--content {
     font-family: 'Orbitron', sans-serif;
     text-align: justify;
     text-justify: auto;
 }
 
-.card-body__separator {
+.medacard-body__separator {
     border-color: orange;
     margin: 2% auto;
-    width: 90%;
+    width: 300px;
 }
 
-.card-body__footer {
-    margin: 1% 0;
+.medacard-body__footer {
+    height: 100%;
 }
 
-.card-body__footer--logo {
+.medacard-body__footer--logo {
     height: 50px;
     text-align: center;
 }
 
 .footer-container {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     background-color: darkblue;
     color: whitesmoke;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     height: auto;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     padding: 1.5%;
 }
